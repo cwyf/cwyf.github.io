@@ -12,4 +12,4 @@
 
 支持游戏截图大图浏览、键盘切换，以及房屋 / 村落前后对比分界线拖动。无 JavaScript 时仍可浏览图片并打开原图。
 
-TikTok Sans 字体从 Google Fonts 官方仓库取得，按 SIL Open Font License 使用，许可证见 `assets/TikTokSans-OFL.txt`。中文使用系统无衬线字体。字体在本站托管，页面加载不依赖第三方字体服务。
+字标使用 Newsreader，正文使用 Noto Sans SC，均来自 Google Fonts 官方仓库并按 SIL Open Font License 使用。许可证见 `assets/Newsreader-OFL.txt` 与 `assets/NotoSansSC-OFL.txt`。网站托管按页面字形裁剪的 WOFF2 字体，不依赖第三方字体服务。后续新增中文文案时需重新生成字形子集。
