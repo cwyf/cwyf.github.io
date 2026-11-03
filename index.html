@@ -2,36 +2,52 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="cwyf 的独立游戏开发实践与开源工作流。Godot Moebius Rendering：程序化模型、风格化渲染与场景细化，附真实工程同机位对比。">
-<meta name="theme-color" content="#f5efe3"><title>cwyf · 独立游戏开发与开源工作流</title>
-<meta property="og:title" content="cwyf · Godot 风格化场景工作流"><meta property="og:description" content="从程序化模型到场景细化：开源 skill 与真实工程改造前后对比。"><meta property="og:image" content="https://cwyf.github.io/assets/house-after.webp"><meta property="og:type" content="website"><meta property="og:url" content="https://cwyf.github.io/"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta name="description" content="cwyf 的独立游戏开发与开源实践。探索巴别塔重建计划的沙漠世界，查看 Godot 场景实机、同机位美术迭代对比与开源 skill。">
+<meta name="theme-color" content="#ebe5e3"><title>cwyf — 独立游戏与场景美术</title>
+<meta property="og:title" content="cwyf — 独立游戏与场景美术"><meta property="og:description" content="一个正在生长的沙漠世界。游戏实机、场景细节与开源工作流。"><meta property="og:image" content="https://cwyf.github.io/assets/panorama.webp"><meta property="og:url" content="https://cwyf.github.io/"><meta property="og:type" content="website">
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=3"><link rel="preload" href="assets/panorama.webp" as="image">
+</head><body>
 <a class="skip" href="#main">跳到正文</a>
-<header class="nav wrap"><a class="brand" href="./" aria-label="cwyf 首页">cwyf<span class="brand-dot">.</span></a><nav aria-label="主导航"><a href="#work">公开项目</a><a href="#case-study">实机对比</a><a class="github-link" href="https://github.com/cwyf">GitHub <span aria-hidden="true">↗</span></a></nav></header>
+<header class="navigation frame"><a class="signature" href="./" aria-label="cwyf 首页">cwyf</a><nav aria-label="主导航"><a href="#work">游戏实机</a><a href="#case-study">迭代对比</a><a href="#skill">开源工具</a><a href="https://github.com/cwyf">GitHub</a></nav></header>
 <main id="main">
-<section class="hero wrap">
-<div class="hero-copy"><p class="eyebrow"><span></span> GAME CRAFT & OPEN TOOLS</p><h1>独立游戏开发实践<br>与开源<span class="marked">工作流。</span></h1><p class="intro">我是 cwyf，正在开发独立游戏，探索 Godot 场景美术与 AI 辅助制作。这里记录真实工程中的方法、验证结果，以及可复用的开源工具。</p><div class="hero-actions"><a class="button primary" href="#work">查看开源项目 <span aria-hidden="true">↓</span></a><a class="quiet-link" href="https://github.com/cwyf">GitHub 主页 ↗</a></div><div class="topics"><span>Godot</span><span>风格化 3D</span><span>AI 辅助制作</span></div></div>
-<figure class="scene real-scene"><a href="#case-study" aria-label="查看沙漠场景改造前后对比"><img src="assets/house-after.webp" alt="使用工作流迭代后的 Godot 沙漠小屋：拱形门框、窗框与连接完整的遮阳棚" width="1600" height="900" fetchpriority="high"></a><figcaption><span class="caption-dot"></span> Godot 工程实机 · 当前迭代 <span>IN-ENGINE / 01</span></figcaption></figure>
+<section class="opening frame" aria-label="cwyf 独立游戏开发">
+<h1 aria-label="cwyf"><span>cw</span><span>yf</span></h1>
+<div class="opening-copy"><p>独立游戏开发<br>与场景美术实践</p><p>我在 Godot 中搭建自己的游戏世界，<br>也把制作方法整理成开源工具。</p><a class="action" href="#work">走进游戏世界</a></div>
+<figure class="opening-image"><a class="image-link" href="assets/panorama.webp" data-viewer data-title="沙海中的村落" aria-label="放大：沙海中的村落"><img src="assets/panorama.webp" alt="沙海中的村落，圆顶小屋、远山与环状星球，Godot 实机" width="1600" height="900" fetchpriority="high"></a><figcaption><span>巴别塔重建计划</span><span>Godot 场景美术测试副本</span></figcaption></figure>
 </section>
-<section id="work" class="work wrap"><div class="section-heading"><div><p class="eyebrow">01 / OPEN SOURCE</p><h2>面向真实工程的场景美术工作流。</h2></div><span class="section-note">公开项目 · 持续迭代</span></div><article class="project"><div class="project-main"><div class="project-meta"><span class="pill">GODOT</span><span>WORKFLOW & AI SKILL</span><span class="license">MIT</span></div><h3>Godot Moebius<br>Rendering<span class="project-arrow" aria-hidden="true">↗</span></h3><p>一套受 Moebius 视觉语言启发的 Godot 场景美术 skill。围绕程序化模型的形态、线稿层次、明暗色块和场景细节，指导 AI 代理在可回退副本中逐项修改与验证。</p><a class="button primary" href="https://github.com/cwyf/godot-moebius-rendering">查看项目与使用方法 ↗</a></div><div class="project-features"><div><span>01</span><h4>形态与结构</h4><p>按建筑、岩石、植被等类别调整形态；检查门窗收口、棚架连接与梯子落点。</p></div><div><span>02</span><h4>线稿与色块</h4><p>建立近粗远细的线稿层次，分离轮廓与明暗边界，沿用已确定的色彩方向。</p></div><div><span>03</span><h4>实机验证</h4><p>以同机位截图与连续运动检查评估修改，记录结构缺陷、清晰度和未解决项。</p></div><p class="scope-note">适用于可编辑的 3D 工程；参考着色器基于 Godot 4 Forward+。这是需要按工程适配的制作流程，不是即插即用滤镜。</p></div></article></section>
-<section id="case-study" class="case-study wrap" aria-labelledby="case-title">
-<div class="section-heading"><div><p class="eyebrow">02 / IN-ENGINE COMPARISON</p><h2 id="case-title">同一工程，改造前后。</h2></div><span class="section-note">Godot 4.7.2 · Forward+ · 1600 × 900</span></div>
-<p class="case-intro">以我的沙漠场景工程为例，展示使用 skill 持续迭代后的变化。两组画面使用相同机位、62° 视场角与输出分辨率，隐藏界面后直接截取实机画面；未对截图另行调色。</p>
-<div class="comparison-group"><div class="comparison-heading"><h3>房屋近景</h3><p>从基础体块，到门窗收口、棚架连接与表面层次。</p></div><div class="comparison-grid">
-<figure><a href="assets/house-before.webp" target="_blank" rel="noopener"><img src="assets/house-before.webp" alt="原始工程同机位：圆顶基础体块、矩形黑色门洞与简化遮阳板" width="1600" height="900" loading="lazy"></a><figcaption><strong>改造前</strong><span>原始工程副本</span></figcaption></figure>
-<figure><a href="assets/house-after.webp" target="_blank" rel="noopener"><img src="assets/house-after.webp" alt="工作流迭代后同机位：调整后的屋体、拱形门框、窗框、完整棚架与墙脚细节" width="1600" height="900" loading="lazy"></a><figcaption><strong>迭代后</strong><span>形态 · 构件 · 线稿 · 场景细节</span></figcaption></figure>
-</div></div>
-<div class="comparison-group"><div class="comparison-heading"><h3>村落中景</h3><p>检查建筑群的整体协调、远近线稿层次与地面细节分布。</p></div><div class="comparison-grid">
-<figure><a href="assets/village-before.webp" target="_blank" rel="noopener"><img src="assets/village-before.webp" alt="原始工程村落中景，展示原有暖色、卡通材质和基础建筑" width="1600" height="900" loading="lazy"></a><figcaption><strong>改造前</strong><span>原始工程副本</span></figcaption></figure>
-<figure><a href="assets/village-after.webp" target="_blank" rel="noopener"><img src="assets/village-after.webp" alt="迭代后村落中景，展示细化建筑、线稿层次以及草丛碎石" width="1600" height="900" loading="lazy"></a><figcaption><strong>迭代后</strong><span>沿用暖色方向，细化整体场景</span></figcaption></figure>
-</div></div>
-<div class="case-notes"><p><strong>对比范围</strong>原始工程已有暖色与卡通渲染。这些变化来自多轮形态、材质、渲染和场景构件调整，不能归因于单个后处理滤镜，也不代表任意项目都能一次达到相同效果。</p><p><strong>验证边界</strong>本页静态图用于观察形态与构件细节，不能单独证明运动稳定性或性能改善。点击图片可查看完整画面。</p><p class="image-rights">Skill 代码与文档按 MIT 许可证开源。游戏截图用于案例展示，游戏素材不包含在 skill 的开源授权范围内。</p></div>
+<section id="work" class="work frame">
+<div class="section-intro"><h2>一个世界，慢慢成形</h2><p>沙海、圆顶小屋与神殿。<br>从远处的空间关系，到近处的材质和构件，<br>这些是同一工程里正在完善的场景。</p></div>
+<div class="world-spread"><figure class="work-image "><a class="image-link" href="assets/village_reverse.webp" data-viewer data-title="另一侧的村落" aria-label="放大：另一侧的村落"><img src="assets/village_reverse.webp" alt="另一侧的村落，Godot 游戏工程实机画面" width="1600" height="900" loading="lazy" decoding="async"></a><figcaption><span>另一侧的村落</span><span>聚落与地形</span></figcaption></figure><figure class="work-image "><a class="image-link" href="assets/temple.webp" data-viewer data-title="神殿内部" aria-label="放大：神殿内部"><img src="assets/temple.webp" alt="神殿内部，Godot 游戏工程实机画面" width="1600" height="900" loading="lazy" decoding="async"></a><figcaption><span>神殿内部</span><span>空间与光影</span></figcaption></figure><figure class="work-image "><a class="image-link" href="assets/dwelling_1.webp" data-viewer data-title="小屋与长影" aria-label="放大：小屋与长影"><img src="assets/dwelling_1.webp" alt="小屋与长影，Godot 游戏工程实机画面" width="1600" height="900" loading="lazy" decoding="async"></a><figcaption><span>小屋与长影</span><span>建筑与环境</span></figcaption></figure><figure class="work-image "><a class="image-link" href="assets/dwelling_3.webp" data-viewer data-title="屋体与棚架" aria-label="放大：屋体与棚架"><img src="assets/dwelling_3.webp" alt="屋体与棚架，Godot 游戏工程实机画面" width="1600" height="900" loading="lazy" decoding="async"></a><figcaption><span>屋体与棚架</span><span>形态与构件</span></figcaption></figure></div>
+<div class="detail-heading"><h3>走近一点</h3><p>窗框的厚度，棚架的连接，梯子的落点。</p></div>
+<div class="detail-spread"><figure class="work-image "><a class="image-link" href="assets/window.webp" data-viewer data-title="窗框与墙面收口" aria-label="放大：窗框与墙面收口"><img src="assets/window.webp" alt="窗框与墙面收口，Godot 游戏工程实机画面" width="1600" height="900" loading="lazy" decoding="async"></a><figcaption><span>窗框与墙面收口</span><span>近看材质与厚度</span></figcaption></figure><figure class="work-image "><a class="image-link" href="assets/ladder.webp" data-viewer data-title="梯子的落点" aria-label="放大：梯子的落点"><img src="assets/ladder.webp" alt="梯子的落点，Godot 游戏工程实机画面" width="1600" height="900" loading="lazy" decoding="async"></a><figcaption><span>梯子的落点</span><span>支撑与接触</span></figcaption></figure><figure class="work-image "><a class="image-link" href="assets/canopy.webp" data-viewer data-title="遮阳棚的连接" aria-label="放大：遮阳棚的连接"><img src="assets/canopy.webp" alt="遮阳棚的连接，Godot 游戏工程实机画面" width="1600" height="900" loading="lazy" decoding="async"></a><figcaption><span>遮阳棚的连接</span><span>棚布、横梁与立柱</span></figcaption></figure></div>
 </section>
-<section id="practice" class="practice wrap"><div class="practice-title"><p class="eyebrow">03 / WORKING PRINCIPLES</p><h2>以工程约束为起点，<br>以实机结果为依据。</h2><p>AI 辅助执行与排查；美术方向、范围和验收标准由创作者决定。</p></div><div class="principles"><div><span>保留方向</span><p>创作中已经确定的色调、角色与玩法，是修改的起点。</p></div><div><span>找到来源</span><p>区分模型、材质和渲染问题，分别处理几何、采样与光照缺陷。</p></div><div><span>回到实机</span><p>静态画面之外，继续检查走动、转镜头和真实使用距离。</p></div></div></section>
-<section class="try wrap"><div><p class="eyebrow">TRY THE WORKFLOW</p><h2>从你的工程开始。</h2><p>先按照仓库说明安装 skill，再向支持该 skill 的 AI 代理提供工程路径、目标画面与需要保留的创作约束。</p></div><div class="prompt-card"><pre id="prompt">使用 $godot-moebius-rendering 检查我的 Godot 工程。
+<section id="case-study" class="case-study frame">
+<div class="section-intro"><h2>看见迭代的差别</h2><p>同一工程，同一机位。<br>保留原有暖色方向，继续调整形态、线稿与场景细节。</p></div>
+<div class="case-layout">
+<div class="compare-sticky">
+<div class="scene-switch" role="group" aria-label="选择对比场景"><button type="button" data-scene="house" aria-pressed="true">房屋近景</button><button type="button" data-scene="village" aria-pressed="false">村落中景</button></div>
+<div class="comparison" style="--reveal:50%" data-ui>
+<img id="before-image" src="assets/house-before.webp" alt="原始工程：圆顶基础体块、简化门洞与遮阳板" width="1600" height="900" loading="lazy">
+<img id="after-image" class="after-image" src="assets/house-after.webp" alt="迭代后：细化屋体、拱形门框、窗框与连接完整的棚架" width="1600" height="900" loading="lazy">
+<button class="compare-divider" type="button" aria-label="拖动对比分界线">↔</button>
+</div>
+<div class="compare-controls"><span>迭代后</span><label class="sr-only" for="reveal">调整改造前后对比位置</label><input id="reveal" type="range" min="0" max="100" value="50" aria-valuetext="迭代后画面显示 50%"><span>原始工程</span></div>
+<div class="image-originals"><a id="before-link" href="assets/house-before.webp" target="_blank" rel="noopener">查看原始画面</a><a id="after-link" href="assets/house-after.webp" target="_blank" rel="noopener">查看迭代画面</a></div>
+</div>
+<div class="case-copy">
+<p><strong>从体块到结构。</strong>调整程序化小屋的轮廓，补足拱形门洞、窗框厚度和真实收口；让棚布、横梁与木柱接起来，让梯子有落点。</p>
+<p><strong>从轮廓到层次。</strong>区分物体轮廓与明暗边界，控制远近线稿的重量；围绕建筑与地形布置枯草、碎石等环境细节。</p>
+<p><strong>回到实机检查。</strong>这里展示的是多轮工作流迭代的累计结果。静态对比用于观察形态与细节，运动清晰度仍需在运行中单独检查。</p>
+<details><summary>截图与对照条件</summary><p>原始工程已有暖色与卡通渲染。对比图来自原始工程独立副本与当前测试副本，均为 Godot 4.7.2 Forward+，相同机位、62° 视场角与 1600 × 900 分辨率，隐藏界面直接截图，未额外调色。</p></details>
+</div></div></section>
+<section id="skill" class="skill-section">
+<div class="frame skill-grid"><div class="skill-description"><h2>把方法留给下一次制作</h2><p class="skill-name">Godot Moebius Rendering</p><p>一套受 Moebius 视觉语言启发的场景美术 skill。让 AI 代理依据你的工程，逐项检查模型形态、线稿、阴影与构件关系。</p><p>在可回退副本中修改，保留创作者已确定的色调、角色、玩法与声音。适合可编辑的 3D 工程；参考着色器基于 Godot 4 Forward+，需要按项目适配。</p><a class="action" href="https://github.com/cwyf/godot-moebius-rendering">获取开源 Skill</a><p class="small-note">代码与文档采用 MIT 许可证。</p></div>
+<div class="installation"><h3>在你的工程中使用</h3><p>按仓库说明安装后，提供工程路径与目标画面，再明确需要保留的创作约束。</p><pre id="prompt">使用 $godot-moebius-rendering 检查我的 Godot 工程。
 在测试副本中修改，保留当前色调、角色、玩法和声音。
 先检查结构衔接与动态清晰度，再细化线稿和场景细节。
-交付实机对照、连续运动检查与未解决项。</pre><div class="prompt-footer"><span>保持副本可回退</span><button id="copy" type="button">复制调用示例 <span aria-hidden="true">⧉</span></button></div><p id="copy-status" role="status" aria-live="polite"></p></div></section>
-</main><footer class="footer wrap"><a class="brand" href="./">cwyf<span class="brand-dot">.</span></a><span>独立游戏开发 · Godot · 开源工作流</span><a href="https://github.com/cwyf">GitHub ↗</a></footer><script src="script.js" defer></script>
-</body></html>
+交付实机对照、连续运动检查与未解决项。</pre><button class="copy-button" id="copy" type="button">复制调用示例</button><p id="copy-status" role="status" aria-live="polite"></p></div></div>
+</section>
+</main>
+<footer class="closing frame"><div class="closing-info"><p>在制作中继续探索。</p><a href="#work">游戏实机</a><a href="https://github.com/cwyf">GitHub 主页</a><p>实机画面用于作品展示，游戏素材不包含在 skill 的 MIT 授权范围内。</p></div><p class="closing-name" aria-hidden="true">cwyf</p></footer>
+<dialog id="image-viewer" aria-label="游戏实机大图"><div class="viewer-toolbar"><p id="viewer-title"></p><button id="viewer-close" type="button" autofocus>关闭大图</button></div><img id="viewer-image" alt=""><div class="viewer-footer"><button id="viewer-prev" type="button">上一张</button><a id="viewer-source" href="assets/panorama.webp" target="_blank" rel="noopener">打开原图</a><button id="viewer-next" type="button">下一张</button></div></dialog>
+<script src="script.js?v=3" defer></script></body></html>
